@@ -11,8 +11,11 @@ A lightweight python library to perform key value operations on Etcd and Consul
 - get_kv(key, recurse=False): get just the key values from the key value store
 - delete(key, recurse=False): delete the key from the key value store
 
+###Requirements
+- python-requests
+
 ###Example
-```
+```python
 >>> import tinykv
 >>> conn=tinykv.Tinykv("etcd://127.0.0.1:4001")
 >>> conn.set_value("key1","value1")
